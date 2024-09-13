@@ -12,7 +12,7 @@ import Rounded from './Rounded';
 const MainLib = () => {
   return (
     <>
-        <div className="w-[84%] rounded-3xl flex flex-col overflow-scroll hide-scrollbar h-[95%] bg-[#dadada]">
+        <div className="flex-1 rounded-3xl flex flex-col overflow-scroll hide-scrollbar h-[95%] bg-[#dadada]">
             <h1 className='w-full text-center text-5xl text-[#36454F] font-semibold my-5'>React Buttons Library</h1>
             <Routes>
                 <Route path='/' element={<Installation />} />

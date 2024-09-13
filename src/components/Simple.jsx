@@ -6,7 +6,7 @@ const Simple = () => {
     <>
       <div className="w-[80%] mx-auto h-full overflow-scroll hide-scrollbar">
         <h1 className='text-center text-3xl font-semibold'>Simple Buttons</h1>
-        <div className="w-full h-auto mt-9 flex flex-wrap gap-5">
+        <div className="w-full h-auto mt-9 flex justify-center flex-wrap gap-5">
             <Card btnType='lgOut' />
             <Card btnType='smOut' />
             <Card btnType='lgOutFl' />
