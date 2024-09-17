@@ -15,6 +15,19 @@
   }
 
   .hide-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  }
+
+
+  @media screen and (max-width: 1320px) {
+    .outerCont{
+        width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 1160px) {
+    .outerCont{
+        width: 98%;
+    }
   }

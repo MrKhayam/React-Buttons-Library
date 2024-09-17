@@ -13,10 +13,9 @@ const Sidebar = () => {
             <ul className='flex flex-col gap-7 h-auto mt-7'>
                 <NavLink to='/' className={({isActive}) => `cursor-pointer ml-2 transition-all duration-200 hover:text-[#91C8E4] ${isActive ? "text-[#91C8E4]" : null}`}>Installation</NavLink>
                 <NavLink to='/simple' className={({isActive}) => `cursor-pointer ml-2 transition-all duration-200 hover:text-[#91C8E4] ${isActive ? "text-[#91C8E4]" : null}`}>Simple</NavLink>
-                <NavLink to='/large' className={({isActive}) => `cursor-pointer ml-2 transition-all duration-200 hover:text-[#91C8E4] ${isActive ? "text-[#91C8E4]" : null}`}>Large</NavLink>
-                <NavLink to='/small' className={({isActive}) => `cursor-pointer ml-2 transition-all duration-200 hover:text-[#91C8E4] ${isActive ? "text-[#91C8E4]" : null}`}>Small</NavLink>
                 <NavLink to='/rounded' className={({isActive}) => `cursor-pointer ml-2 transition-all duration-200 hover:text-[#91C8E4] ${isActive ? "text-[#91C8E4]" : null}`}>Rounded</NavLink>
                 <NavLink to='/outline' className={({isActive}) => `cursor-pointer ml-2 transition-all duration-200 hover:text-[#91C8E4] ${isActive ? "text-[#91C8E4]" : null}`}>Outline</NavLink>
+                <NavLink to='/custom' className={({isActive}) => `cursor-pointer ml-2 transition-all duration-200 hover:text-[#91C8E4] ${isActive ? "text-[#91C8E4]" : null}`}>Custom</NavLink>
             </ul>
             </div>
 

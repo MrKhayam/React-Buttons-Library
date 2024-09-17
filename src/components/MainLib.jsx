@@ -1,13 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Installation from './Installation'
 import {
     Routes,Route,
   } from "react-router-dom";
 import Simple from './Simple';
-import Large from './Large';
-import Small from './Small';
 import Outline from './Outline';
 import Rounded from './Rounded';
+import Custom from './Custom';
 
 const MainLib = () => {
   return (
@@ -17,10 +16,9 @@ const MainLib = () => {
             <Routes>
                 <Route path='/' element={<Installation />} />
                 <Route path='/simple' element={<Simple />}/>
-                <Route path='/large' element={<Large />}/>
-                <Route path='/small' element={<Small />}/>
                 <Route path='/outline' element={<Outline />}/>
                 <Route path='/rounded' element={<Rounded />}/>
+                <Route path='/custom' element={<Custom />}/>
             </Routes>
         </div>
     </>
