@@ -18,7 +18,7 @@ const Custom = () => {
   return (
     <>
         <div className="w-full h-full flex flex-col">
-            <div className="flex items-center justify-center w-full h-1/2">
+            <div className="flex items-center justify-center w-full h-[30%]">
                 <button style={{
                     backgroundColor : isToggled ? 'transparent' : background,
                     color : color,
@@ -31,9 +31,9 @@ const Custom = () => {
                     fontSize : `${textSize}px`
                     }}>Click Me</button>
             </div>
-            <div className="w-full h-1/2">
+            <div className="w-full h-[70%]">
                 <div className="w-[80%] outerCont h-full mx-auto">
-                    <div className="flex flex-col bg-white items-center flex-wrap justify-center w-full h-[80%] rounded-xl">
+                    <div className="flex flex-col bg-white items-center justify-center w-full h-[80%] rounded-xl">
                         <h1 className='mb-10 text-3xl font-semibold text-[#000]'>Toolbar</h1>
                         <div className="toolBar1 flex items-center justify-center gap-20 w-full h-auto p-4">
                             <div className="backgroundPicker flex items-center gap-3">
