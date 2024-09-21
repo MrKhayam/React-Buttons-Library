@@ -18,7 +18,7 @@ const Simple = () => {
     <>
       <div className="w-[80%] mx-auto h-full overflow-scroll hide-scrollbar">
       <div className={`${isClicked ? 'flex' : 'hidden'} fixed z-20 top-0 left-0 w-full items-center justify-center h-screen bg-[#0000007a] backdrop-blur-sm`}>
-            <div className={`w-[900px] relative rounded-lg h-auto p-8 bg-white`}>
+            <div className={`min-w-[900px] relative rounded-lg h-auto p-8 bg-white`}>
                 <IoClose className='absolute top-3 text-xl right-3 cursor-pointer' onClick={handleCross} size={27} />
                 <h1 className='font-semibold text-xl'>Import</h1>
                 <h1 className='bg-black text-[#91C8E4] w-fit p-3 px-5 rounded-lg mt-3 text-lg'><pre>{`import { BtnOutline } from 'react-buttons-library'`}</pre></h1>
