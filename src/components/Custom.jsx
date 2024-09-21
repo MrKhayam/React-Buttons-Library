@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { IoClose } from "react-icons/io5";
+
 
 const Custom = () => {
     const [background, setBackground] = useState('#ffffff');
@@ -12,14 +14,34 @@ const Custom = () => {
     const [isToggled, setIsToggled] = useState(false);
 
 
+
+    const [isClicked, setIsClicked] = useState(false);
+
+    const handleClick = () => {
+        setIsClicked(true);
+    }
+    const handleCross = () => {
+        setIsClicked(false);
+    }
+
+
     const toggleTheme = () => {
         setIsToggled(!isToggled);
       };
   return (
     <>
         <div className="w-full h-full flex flex-col">
+        <div className={`${isClicked ? 'flex' : 'hidden'} fixed z-20 top-0 left-0 w-full items-center justify-center h-screen bg-[#0000007a] backdrop-blur-sm`}>
+            <div className={`w-[900px] relative rounded-lg h-auto p-8 bg-white`}>
+                <IoClose className='absolute top-3 text-xl right-3 cursor-pointer' onClick={handleCross} size={27} />
+                <h1 className='font-semibold text-xl'>Import</h1>
+                <h1 className='bg-black text-[#91C8E4] w-fit p-3 px-5 rounded-lg mt-3 text-lg'><pre>{`import { Button } from 'react-buttons-library'`}</pre></h1>
+                <h1 className='font-semibold text-xl mt-5'>Usage</h1>
+                <h1 className='bg-black text-[#91C8E4] w-fit p-3 px-5 rounded-lg mt-3 text-lg'><pre>{`<Button label='Click Me' btnClass={} onClick={() => alert('Clicked')} />`}</pre></h1>
+            </div>
+        </div>
             <div className="flex items-center justify-center w-full h-[30%]">
-                <button style={{
+                <button onClick={handleClick} style={{
                     backgroundColor : isToggled ? 'transparent' : background,
                     color : color,
                     borderRadius : `${borderRadiusVal}px`,

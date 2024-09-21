@@ -21,9 +21,9 @@ const Simple = () => {
             <div className={`w-[900px] relative rounded-lg h-auto p-8 bg-white`}>
                 <IoClose className='absolute top-3 text-xl right-3 cursor-pointer' onClick={handleCross} size={27} />
                 <h1 className='font-semibold text-xl'>Import</h1>
-                <h1 className='bg-black text-[#91C8E4] w-fit p-3 px-5 rounded-lg mt-3 text-lg'><pre>{`import { Button } from 'react-buttons-library'`}</pre></h1>
+                <h1 className='bg-black text-[#91C8E4] w-fit p-3 px-5 rounded-lg mt-3 text-lg'><pre>{`import { BtnRounded } from 'react-buttons-library'`}</pre></h1>
                 <h1 className='font-semibold text-xl mt-5'>Usage</h1>
-                <h1 className='bg-black text-[#91C8E4] w-fit p-3 px-5 rounded-lg mt-3 text-lg'><pre>{`<Button label='Click Me' btnClass={${btnTxt}} onClick={() => alert('Clicked')} />`}</pre></h1>
+                <h1 className='bg-black text-[#91C8E4] w-fit p-3 px-5 rounded-lg mt-3 text-lg'><pre>{`<BtnRounded label='Click Me' btnClass='${btnTxt}' onClick={() => alert('Clicked')} />`}</pre></h1>
             </div>
         </div>
         <h1 className='text-center text-3xl font-semibold'>Simple Buttons</h1>
