@@ -18,7 +18,7 @@ const MainLib = () => {
                 <Route path='/simple' element={<Simple />}/>
                 <Route path='/outline' element={<Outline />}/>
                 <Route path='/rounded' element={<Rounded />}/>
-                <Route path='/custom' element={<Custom />}/>
+                <Route path='/custom/*' element={<Custom />}/>
             </Routes>
         </div>
     </>
