@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
-import {
-     Routes,Route,
-  } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import CssCode from "./CssCode";
 import TailwindCode from "./TailwindCode";
 
@@ -47,16 +45,30 @@ const Custom = () => {
               size={27}
             />
             <div className="bar mx-auto bg-black gap-5 w-[300px] items-center justify-center h-[60px] rounded-full flex">
-              <NavLink to='css' className={({isActive}) => `css ${isActive ? 'bg-white text-black' : 'text-white'} flex items-center justify-center cursor-pointer w-[30%] text-center h-[40px] rounded-full`}>
+              <NavLink
+                to="css"
+                className={({ isActive }) =>
+                  `css ${
+                    isActive ? "bg-white text-black" : "text-white"
+                  } flex items-center justify-center cursor-pointer w-[30%] text-center h-[40px] rounded-full`
+                }
+              >
                 Css
               </NavLink>
-              <NavLink to='tailwind' className={({isActive}) => `css ${isActive ? 'bg-white text-black' : 'text-white'} flex items-center justify-center cursor-pointer w-[30%] text-center h-[40px] rounded-full`}>
+              <NavLink
+                to="tailwind"
+                className={({ isActive }) =>
+                  `css ${
+                    isActive ? "bg-white text-black" : "text-white"
+                  } flex items-center justify-center cursor-pointer w-[30%] text-center h-[40px] rounded-full`
+                }
+              >
                 Tailwind
               </NavLink>
             </div>
             <Routes>
-                <Route path="css" element={<CssCode />} />
-                <Route path="tailwind" element={<TailwindCode />} /> 
+              <Route path="css" element={<CssCode background={background} color={color} paddingx={paddingX} paddingy={paddingY} borderRadius={borderRadiusVal} textSize={textSize} borderSize={borderSize} isToggled={isToggled} borderVal={borderVal} />} />
+              <Route path="tailwind" element={<TailwindCode background={background} color={color} paddingx={paddingX} paddingy={paddingY} borderRadius={borderRadiusVal} textSize={textSize} borderSize={borderSize} isToggled={isToggled} borderVal={borderVal} />} />
             </Routes>
           </div>
         </div>
