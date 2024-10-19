@@ -9,10 +9,13 @@ const App = () => {
   return (
     <Router>
         <Toaster />
-        <div className='h-screen flex gap-4 justify-between items-center px-4 w-full'>
+        <div className="w-full absolute h-screen md:hidden flex items-center justify-center">
+          <h1 className='text-black text-2xl'>Only for larger screens.</h1>
+        </div>
+      <div className='h-screen hidden md:flex gap-4 justify-between items-center px-4 w-full'>
         <Sidebar />
         <MainLib />
-    </div>
+        </div>
     </Router>
   )
 }

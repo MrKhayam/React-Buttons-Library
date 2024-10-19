@@ -60,7 +60,7 @@ const CssCode = ({
     padding-right: ${paddingx}px;
     padding-top: ${paddingy}px;
     padding-bottom: ${paddingy}px;
-    ${borderSize > 0 && `border: ${borderSize}px solid ${borderVal};`}
+    ${borderSize > 0 ? `border: ${borderSize}px solid ${borderVal};` : 'border: none;'}
     font-size: ${textSize}px;
     border-radius: ${borderRadius}px;
   }`}
